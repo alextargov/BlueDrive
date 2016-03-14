@@ -1,0 +1,19 @@
+<!-- Stored in resources/views/layouts/master.blade.php -->
+
+<html>
+    <head>
+        <title>BlueDrive - <?php echo $__env->yieldContent('title'); ?></title>
+        <?php echo $__env->yieldContent('css'); ?>
+        <link rel="stylesheet" href="<?php echo e(asset('assets/css/jquery-ui.css')); ?>">
+        <link rel="stylesheet" href="<?php echo e(asset('assets/css/basic.css')); ?>">
+        <link rel="stylesheet" href="<?php echo e(asset('assets/css/styles.css')); ?>">
+        <link rel="stylesheet" href="<?php echo e(asset('assets/css/font-awesome.css')); ?>">
+    </head>
+    <body>
+
+
+        <div class="container">
+            <?php echo $__env->yieldContent('content'); ?>
+        </div>
+    </body>
+</html>

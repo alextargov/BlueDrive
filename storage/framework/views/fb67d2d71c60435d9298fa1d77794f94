@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Laravel</title>
+        <script src=" <?php echo e(URL::asset('assets/js/jquery.js')); ?>"></script>
+	<script src="<?php echo e(URL::asset('assets/js/jquery-ui.js')); ?>"></script>
+        <script src="<?php echo e(URL::asset('assets/js/app.js')); ?>"  charset="UTF-8"></script>
+        <script src="<?php echo e(URL::asset('assets/js/jquery.nu-context-menu.js')); ?>"  charset="UTF-8"></script>
+        <script src="<?php echo e(asset('assets/js/dropzone.js')); ?>"></script>
+        
+        <link rel="stylesheet" href="<?php echo e(asset('assets/css/dropzone.css')); ?>">
+        <link rel="stylesheet" href="<?php echo e(asset('assets/css/font-awesome.css')); ?>">
+        <link rel="stylesheet" href="<?php echo e(asset('assets/css/jquery-ui.css')); ?>">
+        <link rel="stylesheet" href="<?php echo e(asset('assets/css/basic.css')); ?>">
+        <link rel="stylesheet" href="<?php echo e(asset('assets/css/styles.css')); ?>">
+        <link rel="stylesheet" href="<?php echo e(asset('assets/css/nu-context-menu.css')); ?>">
+        
+    </head>
+    <body>  
+        <div class="container">
+            
+            
+        
+            <?php if(count($errors) > 0): ?>
+                <div class="alert alert-danger">
+                    <ul>
+                        <?php foreach($errors->all() as $error): ?>
+                            <li><?php echo e($error); ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+            <?php endif; ?>
+            
+            
+        </div>
+        
+        <div id="dialog-folder">
+            <div class="create-folder">
+                <div class="input-field">
+                    <input type="text" name="folderName" placeholder="Нова папка" id="folder-name" class="text ui-widget-content ui-corner-all">
+                </div>
+            </div>
+        </div>
+        <div id="dialog-upload">
+            <div class="upload-file">  
+                <form  enctype="multipart/form-data" action="<?php echo e(URL::to('upload')); ?>" class="dropzone" id="dropzoneFileUpload">
+                    <input type="hidden" value="<?php echo e(csrf_token()); ?>" name="_token" />
+                </form>
+            </div>
+        </div>
+        <div id="dialog-info">
+            <div class="file-info">
+                
+                <div class="left">
+                    <span>Име:</span>
+                </div>
+                <div class="dialog-filename right">
+                    <span></span>
+                </div>
+                <div class="clr"></div>
+                <hr>
+                <div style='clear: both;' class="left">
+                    <span>Размер:</span>
+                </div>
+                <div class="dialog-size right">
+                    <span></span>
+                </div>
+                <div class="clr"></div>
+                <hr>
+                <div class="left">
+                    <span>Тип:</span>
+                </div>
+                <div class="dialog-type right">
+                    <span></span>
+                </div>
+                <div class="clr"></div>
+                <hr>
+                <div class="left">
+                    <span>Създаден на:</span>
+                </div>
+                <div class="dialog-created right">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

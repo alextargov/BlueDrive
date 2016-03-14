@@ -1,0 +1,259 @@
+html, body {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1060px;
+}
+.container {
+
+   // height:100%;
+}
+
+.file-info .left {
+    float: left;
+    width: 30%;
+}
+.file-info .right {
+    float: right;
+    width: 70%;
+}
+
+.logout {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 10px;
+    float: right;
+    margin: 5px 20px;
+}
+.version table td {
+    font-size: 14px;
+}
+
+.file-info hr {
+    background: #e8e8e8 none repeat scroll 0 0;
+    border: 0 none;
+    color: #e8e8e8;
+    height: 1px;
+    margin: 4px 0;
+}
+.clr {
+    clear: both;
+}
+.folders {
+    width:15%;
+    float:left;
+}
+.preview {
+    width: 20%;
+    float:left
+    
+}
+#results th:first-child {
+    width:5%
+}
+#results th:last-child {
+    width:12%
+}
+#results tr {
+    text-align: center;
+}
+.toBeSelected tr {
+    
+}
+
+button#create-upload {
+    float: right;
+    margin: 5px 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-weight: 100;
+    background-color: rgba(38,154,188, 1);
+}
+.content {
+    display: inline-block;
+    float: left;
+    max-width: 100%;
+    width: 60%;
+}
+.folders ul {
+    list-style: none;
+    padding-left:10px
+}
+table.folders-list tr td {
+    padding-left:5px;
+}
+table.folders-list tbody.folder {
+    cursor: pointer;
+}
+.folders ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:5px;
+}
+.block {
+    margin:0 5px;
+}         
+
+.header {
+    margin: 10px 0;
+    height: 40px;
+}
+
+.title {
+    font-size: 32px;
+    float: left;
+} 
+            #feedback { font-size: 16px; }
+            .ui-selecting { background: #FECA40; }
+            .ui-selected { background: #F39814; color: white; }
+            table { list-style-type: none; margin: 0; padding: 0; width: 100%; }
+            table tr td{ margin: 3px;  font-size: 16px; height: 18px; }
+            
+            img.getImage {
+                max-width: 300px;
+                max-height: 450px;
+            }
+/*      LOGIN STYLES    */  
+.form-horizontal .col-md-6 {
+    
+}
+.login-block {
+    width: 320px;
+    height: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #f39814 ;
+    margin: 20px auto;
+    
+}
+
+.login-block h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.login-block input {
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: Montserrat;
+    padding: 0 20px 0 40px;
+    outline: none;
+}
+
+.login-block input:active, .login-block input:focus {
+    border: 1px solid #f39814 ;
+}
+
+.login-block input#username {
+    margin-bottom: 30px;
+}
+
+.login-block input#password {
+    margin-bottom: 10px;
+}
+
+.login-block button {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    background: #f39814 ;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #f36814;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;   
+}
+.login-block a {
+    text-decoration: none;
+}
+
+.login-block button:hover {
+    background: #f36814;
+}
+
+.login-block i {
+    float: right;
+    position: relative;
+    right: 290px;
+    top: 30px;
+}
+
+.register { 
+    float:right;
+}
+.register a { 
+    text-decoration: none;
+    color: #000;
+}
+
+/*      Spinner     */
+.spinner {
+    display: none;
+    left: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: -30px;
+    z-index: 102;
+    
+}
+
+.spinner span {
+    font-size: 20px;
+    line-height: 50px;
+    margin: 190px 0 0 180px;
+    position: absolute;
+    z-index: 103;
+}
+
+.particle{
+    
+  position: absolute;
+  top:140px; left: 120px;
+  height:100px; width:100px;
+  border-radius: 50%;
+  border: 5px solid #222;
+  animation: convect 3s infinite linear;
+}
+
+.particle:before{
+  display: block;
+  content: '';
+  position: absolute;
+  height: 100px; width: 100px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 1;
+}
+
+.particle:nth-child(2){  animation-delay:-2.5s; }
+.particle:nth-child(3){  animation-delay:-2s }
+.particle:nth-child(4){  animation-delay:-1.5s }
+.particle:nth-child(5){  animation-delay:-1s }
+.particle:nth-child(6){  animation-delay:-.5s }
+
+
+@keyframes convect {
+  0% { top: 150px; left: 100px }
+  25% { top: 125px; left: 200px }
+  50% { top: 175px; left: 250px }
+  75% { top: 200px; left: 175px }
+  100% { top: 150px; left: 100px }
+}

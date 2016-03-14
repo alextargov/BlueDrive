@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+            Upload the file
+        </title>
+    </head>
+    <body>
+                
+        <form method="POST" enctype="multipart/form-data" action="<?php echo e(URL::to('upload')); ?>">
+            <label>Upload</label>
+            <input type="file" name="file" /><br/>
+            <input name="submit" type="submit" value="submit" />
+            <input type="hidden" value="<?php echo e(csrf_token()); ?>" name="_token" />
+        </form>
+        
+    </body>   
+</html>
